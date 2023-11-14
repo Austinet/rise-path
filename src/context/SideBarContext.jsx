@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const MenuContext = createContext({});
 
 const SideBarContext = ({ children }) => {
-  const [activeTab, setActiveTab] = useState("settings");
+  const [activeTab, setActiveTab] = useState("mentorship");
   const [mode, setMode] = useState("light");
   const [toggleNav, setToggleNav] = useState(false);
 
