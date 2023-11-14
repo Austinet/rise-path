@@ -1,68 +1,69 @@
 import mentor from "../assets/images/mentor.png";
+import checkbox from "../assets/icons/Checkbox.svg";
 
 const mentorVideos = [
   {
     id: 1,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 2,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 3,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 4,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 5,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 6,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 7,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 8,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
   {
     id: 9,
-    title: "The power of entrepreneural mindset",
+    title: "The Power of Entrepreneurial Mindset",
     video: mentor,
-    author: "Bil Richie",
+    author: "Bill Roche",
   },
 ];
 
 const Mentorship = () => {
   return (
-    <section className="max-h-[50rem] overflow-auto  custom-scroll-2">
+    <section className="max-h-[50rem]">
       {/* Mentorship videos */}
-      <div className="bg-white  p-2">
-        <h2 className="text-[0.75rem] font-medium leading-normal mb-5">
+      <div className="bg-white p-[0.63rem] mb-[1.56rem] rounded-[0.63rem]">
+        <h2 className="text-[0.75rem] font-medium leading-normal mb-[1.19rem] tracking-[0.0625rem]">
           Videos from Mentors
         </h2>
         <div className="flex gap-5 pb-3 overflow-auto max-w-[80rem] w-full custom-scroll">
@@ -74,10 +75,16 @@ const Mentorship = () => {
               <img src={video.video} alt="" className="rounded-lg w-full" />
               <div className="flex items-center p-2 justify-between">
                 <div>
-                  <h3>{video.title}</h3>
-                  <p>- {video.author}</p>
+                  <h3 className="text-[0.75rem] leading-normal">
+                    {video.title}
+                  </h3>
+                  <p className="text-[0.75rem] leading-normal">
+                    - {video.author}
+                  </p>
                 </div>
-                <button>fl</button>
+                <button className="w-[1.125rem] h-[1.125rem]">
+                  <img src={checkbox} alt="" />
+                </button>
               </div>
             </div>
           ))}
@@ -85,7 +92,7 @@ const Mentorship = () => {
       </div>
 
       {/* Career stories from Mentors */}
-      <div className="bg-white  p-2">
+      <div className="bg-white p-2 rounded-[0.63rem]">
         <h2 className="text-[0.75rem] font-medium leading-normal mb-5">
           Career stories from Mentors
         </h2>
@@ -98,18 +105,24 @@ const Mentorship = () => {
               <img src={video.video} alt="" className="rounded-lg w-full" />
               <div className="flex items-center p-2 justify-between">
                 <div>
-                  <h3>{video.title}</h3>
-                  <p>- {video.author}</p>
+                  <h3 className="text-[0.75rem] leading-normal">
+                    {video.title}
+                  </h3>
+                  <p className="text-[0.75rem] leading-normal">
+                    - {video.author}
+                  </p>
                 </div>
-                <button>fl</button>
+                <button className="w-[1.125rem] h-[1.125rem]">
+                  <img src={checkbox} alt="" />
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-         {/* Mentorship videos */}
-         <div className="bg-white  p-2">
+      {/* Mentorship videos */}
+      <div className="bg-white p-2 rounded-[0.63rem]">
         <h2 className="text-[0.75rem] font-medium leading-normal mb-5">
           Videos from Mentors
         </h2>
@@ -117,15 +130,25 @@ const Mentorship = () => {
           {mentorVideos.map((video) => (
             <div
               key={video.id}
-              className="rounded-lg bg-[#F8F8F8] min-w-[300px]"
+              className="rounded-[0.3125rem] bg-[#F8F8F8] min-w-[15.625rem]"
             >
-              <img src={video.video} alt="" className="rounded-lg w-full" />
+              <img
+                src={video.video}
+                alt=""
+                className="rounded-[0.3125rem]  w-full"
+              />
               <div className="flex items-center p-2 justify-between">
                 <div>
-                  <h3>{video.title}</h3>
-                  <p>- {video.author}</p>
+                  <h3 className="text-[0.75rem] leading-normal">
+                    {video.title}
+                  </h3>
+                  <p className="text-[0.75rem] leading-normal">
+                    - {video.author}
+                  </p>
                 </div>
-                <button>fl</button>
+                <button className="w-[1.125rem] h-[1.125rem]">
+                  <img src={checkbox} alt="" />
+                </button>
               </div>
             </div>
           ))}
